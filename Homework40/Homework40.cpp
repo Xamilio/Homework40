@@ -232,6 +232,11 @@ public:
 		SetStr(str);
 		count++;
 	}
+	~MyString()
+	{
+		Clear();
+		count--;
+	}
 	void SetStr(const char* str)
 	{
 		Clear();
